@@ -6,6 +6,11 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-  	erb :index
+  	erb :index  
+  end
+  
+  post "/results" do
+    params.to_s
+    
   end
 end
